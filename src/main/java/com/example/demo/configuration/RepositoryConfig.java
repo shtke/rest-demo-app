@@ -10,7 +10,7 @@ import com.example.demo.domain.repository.impl.IssuesRestRepositoryImpl;
 public class RepositoryConfig {
 	@Bean
 	IssuesRepository issueRepository() {
-		String baseUrl = "https://api.github.com/repos/spring-projects/spring-boo/issues";
+		String baseUrl = "https://api.github.com/repos/spring-projects/spring-boot/issues";
         return new IssuesRestRepositoryImpl(baseUrl);
     }
 }
